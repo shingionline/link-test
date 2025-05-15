@@ -1,0 +1,9 @@
+git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/sb-dev-test-202302 .
+
+# set database settings in .env
+
+From directory:
+
+composer install
+php artisan key:generate
+php artisan migrate:fresh --seed
